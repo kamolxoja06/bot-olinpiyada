@@ -44,7 +44,7 @@ REG_EXCEL = "registrations.xlsx"
 
 PAYMENT_TEXT = (
     "✅ Bazada topildingiz!\n\n"
-    "💳 Karta: 5614 6818 7326 9900\n"
+    "💳 Karta: 5614 6818 7319 7796\n"
     "💰 Summa: 25 000 so'm\n\n"
     "🧾 Chekni (rasm yoki pdf) qilib yuboring."
 )
