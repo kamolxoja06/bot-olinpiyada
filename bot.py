@@ -26,7 +26,7 @@ from aiogram.fsm.context import FSMContext
 
 # ================= CONFIG =================
 BOT_TOKEN = "8385012939:AAEpXYooz8b_AUClguGRSq_9jRDMVTBRjOg"
-ADMIN_ID = 5995272629
+ADMIN_ID = 8279182049
 
 # To'lovdan keyin kiradigan yopiq kanal/supergroup ID ( -100... )
 CHANNEL_ID = -1003668365856
