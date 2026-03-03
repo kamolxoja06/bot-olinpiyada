@@ -255,14 +255,14 @@ async def step_phone_manual(m: Message, state: FSMContext):
 async def step_phone_tg(m: Message, state: FSMContext):
     await state.update_data(phone_telegram=m.contact.phone_number)
     await state.set_state(Reg.school)
-    await m.answer("🏫 Maktabingizni yozing:", reply_markup=ReplyKeyboardRemove())
+    await m.answer("🏫 Maktabingizni yozing:\n masalan(2-maktab)", reply_markup=ReplyKeyboardRemove())
 
 
 @dp.message(Reg.school, F.text)
 async def step_school(m: Message, state: FSMContext):
     await state.update_data(school=m.text.strip())
     await state.set_state(Reg.class_)
-    await m.answer("📚 Sinfingizni yozing (masalan: 9-A yoki 10):")
+    await m.answer("📚 Sinfingizni yozing\n (masalan: 9-A yoki 10):")
 
 
 @dp.message(Reg.class_, F.text)
@@ -288,7 +288,7 @@ async def step_class(m: Message, state: FSMContext):
     })
 
     if not found:
-        await m.answer("❌ Bazadan topilmadingiz (faqat ism-familiya tekshirildi).\nQayta urinish: /start")
+        await m.answer("❌ Bazadan topilmadingiz\n (Biz bilan bog'laning: +998700747071\n Telegram:@olimpiyada_manager).\nQayta urinish: /start")
         await state.clear()
         return
 
